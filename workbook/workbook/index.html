@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+
+
+    <style>
+
+
+        body {
+            height: 100vh;
+            background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWd5MjljN3N2amw4dGpsNzhjZ3gzYzc5dWM3dnF3bnNjMHlhc28zeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xMzrtZHrqMjxNS/giphy.gif);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #rectangle1 {
+            width: 350px;
+            height: 600px;
+            border: 1px solid;
+            border-radius: 10px;
+            position: absolute; top: 130px; left: 150px;
+            background-color: white;
+            z-index: 1;
+        }
+
+        #rectangle2 {
+            width: 350px;
+            height: 600px;
+            border: 1px solid;
+            border-radius: 10px;
+            position: absolute; top: 130px; left: 600px;
+            background-color: white;
+            z-index: 1;
+        }
+
+        #rectangle3 {
+            width: 350px;
+            height: 600px;
+            border: 1px solid;
+            border-radius: 10px;
+            position: absolute; top: 130px; right: 100px;
+            background-color: white;
+            z-index: 1;
+        }
+
+        #week1H {
+            font-size: 200%;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute; top: 150px; left: 240px;
+            z-index: 2;
+        }
+
+        #week2H {
+            font-size: 200%;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute; top: 150px; left: 690px;
+            z-index: 2;
+        }
+
+        #week3H {
+            font-size: 200%;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute; top: 150px; right: 180px;
+            z-index: 2;
+        }
+
+        .week1B {
+            padding: 0px 30px;
+            position: absolute; bottom: 70px; left:135px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 3px;
+        }
+
+        .week2B {
+            padding: 0px 30px;
+            position: absolute; bottom: 70px; left:360px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 3px;
+        }
+
+        .week3B {
+            padding: 0px 30px;
+            position: absolute; bottom: 70px; right:105px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 3px;
+        }
+
+        #triangle1 {
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-left: 100px solid chartreuse;
+            border-bottom: 50px solid transparent;
+            position: absolute; top: 80px; left: 60px;
+            transform: rotate(170deg);
+            z-index: 1;
+        }
+
+        #triangle2 {
+            width: 0;
+            height: 0;
+            border-top: 100px solid transparent;
+            border-left: 200px solid chartreuse;
+            border-bottom: 100px solid transparent;
+            position: absolute; bottom: 30px; left: 500px;
+            transform: rotate(250deg);
+            z-index: 1;
+        }
+
+        #triangle3 {
+            width: 0;
+            height: 0;
+            border-top: 25px solid transparent;
+            border-right: 50px solid chartreuse;
+            border-bottom: 25px solid transparent;
+            position: absolute; top: 40px; right: 200px;
+            transform: rotate(10deg);
+        }
+
+        #img1 {
+            position: absolute; top: 300px; left: 200px;
+            z-index: 2;
+        }
+
+        #img2 {
+            position: absolute; top: 320px; left: 650px;
+            z-index: 2;
+            transform: rotate(270deg);
+        }
+
+        #img3 {
+            position: absolute; top: 320px; right: 150px;
+            z-index: 2;
+        }
+    </style>
+    
+
+</head>
+<body>
+    
+    <!--week heading-->
+
+    <div class="week_heading">
+        <div id="week1H">
+            <h2>WEEK 1</h2>
+        </div>
+        <div id="week2H">
+            <h2>WEEK 2</h2>
+        </div>
+        <div id="week3H">
+            <h2>WEEK 3</h2>
+        </div>
+    </div>
+
+    <!--direct to week page (button)-->
+
+    <div class="week1B">
+        <a href="week1.html">
+            <button class="week1B">READ</button>
+        </a>
+    </div>
+
+    <div class="week2B">
+        <a href="week2.html">
+            <button class="week2B">READ</button>
+        </a>
+    </div>
+
+    <div class="week3B">
+        <a href="week3.html">
+            <button class="week3B">READ</button>
+        </a>
+    </div>
+
+    <!--rectangle text box-->
+
+    <div class="rectangle">
+        <div id="rectangle1"></div>
+        <div id="rectangle2"></div>
+        <div id="rectangle3"></div>
+    </div>
+
+     <!--geometric shapes-->
+
+     <div class="triangle">
+        <div id="triangle1"></div>
+        <div id="triangle2"></div>
+        <div id="triangle3"></div>
+    </div>
+
+
+    <!--background image-->
+
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWd5MjljN3N2amw4dGpsNzhjZ3gzYzc5dWM3dnF3bnNjMHlhc28zeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xMzrtZHrqMjxNS/giphy.gif" alt="background" width="2000px" height="2000px">
+
+    <!--week page image-->
+
+    <div class="weekfrontcover">
+        <div id="img1">
+            <img src="https://i.pinimg.com/originals/70/78/39/707839af6ef7678cadc3e18066259996.gif" width="250px" height="250px">
+        </div>
+        <div id="img2">
+            <img src="https://art.parco.jp/acr/images/w660/xposters01.jpg" width="250px" height="200px">
+        </div>
+        <div id="img3">
+            <img src="https://images.squarespace-cdn.com/content/v1/51d98be2e4b05a25fc200cbc/1633401868859-74JKNRRLQIYBVC5BI3QR/Hanmo2.jpeg?format=2500w" width="250px" height="200px">
+        </div>
+    </div>
+
+
+</body>
+</html>
