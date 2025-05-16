@@ -4,595 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
-
-    <!--insert p5js file in here-->
-    <!--<script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>-->
-
+    <title>Sheryn's Website</title>
 
     <style>
 
-
-        body {
-            height: 100vh;
-            background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWd5MjljN3N2amw4dGpsNzhjZ3gzYzc5dWM3dnF3bnNjMHlhc28zeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xMzrtZHrqMjxNS/giphy.gif);
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-
-       /* borders for week 1 -3 */
-
-        #rectangle1 {
-            width: 350px;
-            height: 600px;
-            border: 1px solid;
-            border-radius: 10px;
-            position: absolute; top: 130px; left: 150px;
-            background-color: white;
-            z-index: 1;
-        }
-
-        #rectangle2 {
-            width: 350px;
-            height: 600px;
-            border: 1px solid;
-            border-radius: 10px;
-            position: absolute; top: 130px; left: 600px;
-            background-color: white;
-            z-index: 1;
-        }
-
-        #rectangle3 {
-            width: 350px;
-            height: 600px;
-            border: 1px solid;
-            border-radius: 10px;
-            position: absolute; top: 130px; right: 100px;
-            background-color: white;
-            z-index: 1;
-        }
-
-        /* borders for week 4-6 */
-
-        #rectangle4 {
-            width: 350px;
-            height: 600px;
-            border: 1px solid;
-            border-radius: 10px;
-            position: absolute; top: 800px; left: 150px;
-            background-color: white;
-            z-index: 10;
-        }
-
-        #rectangle5 {
-            width: 350px;
-            height: 600px;
-            border: 1px solid;
-            border-radius: 10px;
-            position: absolute; top: 800px; left: 600px;
-            background-color: white;
-            z-index: 10;
-        }
-
-        #rectangle6 {
-            width: 350px;
-            height: 600px;
-            border: 1px solid;
-            border-radius: 10px;
-            position: absolute; top: 800px; right: 100px;
-            background-color: white;
-            z-index: 10;
-        }
-
-        /* borders for week 7-9 */
-
-        #rectangle7 {
-            width: 350px;
-            height: 600px;
-            border: 1px solid;
-            border-radius: 10px;
-            position: absolute; top: 1480px; left: 150px;
-            background-color: white;
-            z-index: 10;
-        }
-
-        #rectangle8 {
-            width: 350px;
-            height: 600px;
-            border: 1px solid;
-            border-radius: 10px;
-            position: absolute; top: 1480px; left: 600px;
-            background-color: white;
-            z-index: 10;
-        }
-
-        #rectangle9 {
-            width: 350px;
-            height: 600px;
-            border: 1px solid;
-            border-radius: 10px;
-            position: absolute; top: 1480px; right: 100px;
-            background-color: white;
-            z-index: 10;
-        }
-
-        /* weekly headings  */
-
-
-        #week1H {
-            font-size: 200%;
+        .title {
             font-family: Arial, Helvetica, sans-serif;
-            position: absolute; top: 150px; left: 240px;
-            z-index: 2;
         }
 
-        #week2H {
-            font-size: 200%;
-            font-family: Arial, Helvetica, sans-serif;
-            position: absolute; top: 150px; left: 690px;
-            z-index: 2;
+
+        #web {
+            font-size: 800%;
+            position: absolute; top: -150px; left: 50px;
         }
 
-        #week3H {
-            font-size: 200%;
-            font-family: Arial, Helvetica, sans-serif;
-            position: absolute; top: 150px; right: 180px;
-            z-index: 2;
+        #design {
+            font-size: 500%;
+            transform: rotate(45deg);
+            position: absolute; top: 200px; right: 70px;
         }
 
-        #week4H {
-            font-size: 200%;
-            font-family: Arial, Helvetica, sans-serif;
-            position: absolute; top: 850px; left: 230px;
-            z-index: 20;
+        #workbook {
+            font-size: 400%;
+            position: absolute; bottom: -40px; left: 50px;
+
         }
 
-        #week5H {
-            font-size: 200%;
-            font-family: Arial, Helvetica, sans-serif;
-            position: absolute; top: 850px; left: 690px;
-            z-index: 20;
+        #subjectname {
+            font-size: 150%;
+            position: absolute; top: 50px; right: 80px;
+            background-color: chartreuse;
+            padding: 2px 100px;
+    
+
         }
 
-        #week6H {
-            font-size: 200%;
-            font-family: Arial, Helvetica, sans-serif;
-            position: absolute; top: 850px; right: 180px;
-            z-index: 20;
+        #image1 {
+            position: absolute; top: 200px; left: 30px;
         }
 
-        #week7H {
-            font-size: 200%;
-            font-family: Arial, Helvetica, sans-serif;
-            position: absolute; top: 1530px; left: 230px;
-            z-index: 20;
+        #image2 {
+            position:absolute; top: 200px; right: 40px;
         }
 
-        #week8H {
-            font-size: 200%;
-            font-family: Arial, Helvetica, sans-serif;
-            position: absolute; top: 1530px; left: 690px;
-            z-index: 20;
+        #image3 {
+            position:absolute; top: 300px; left: 200px;
         }
 
-        #week9H {
-            font-size: 200%;
-            font-family: Arial, Helvetica, sans-serif;
-            position: absolute; top: 1530px; right: 180px;
-            z-index: 20;
-        }
-
-        /* weekly button */
-
-        .week1B {
-            padding: 0px 30px;
-            position: absolute; bottom: 70px; left:135px;
+        .button {
+            padding: 20px 50px;
+            position: absolute; bottom: 70px; right: 300px;
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: white;
+            background-color: chartreuse;
             border: none;
             cursor: pointer;
-            z-index: 10;
-            border-radius: 3px;
         }
 
-        .week2B {
-            padding: 0px 30px;
-            position: absolute; bottom: 70px; left:360px;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-            z-index: 10;
-            border-radius: 3px;
+        #circle1 {
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            border-radius: 50%;
+            position: absolute; top: 20px; left: 30px;
+            z-index: -1;
         }
 
-        .week3B {
-            padding: 0px 30px;
-            position: absolute; bottom: 70px; right:105px;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-            z-index: 10;
-            border-radius: 3px;
-        }
-
-        .week4B {
-            padding: 0px 30px;
-            position: absolute; top: 650px; left:135px;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-            z-index: 30;
-            border-radius: 3px;
-        }
-
-        .week5B {
-            padding: 0px 30px;
-            position: absolute; top: 650px; left:360px;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-            z-index: 20;
-            border-radius: 3px;
-        }
-
-        .week6B {
-            padding: 0px 30px;
-            position: absolute; top: 650px; right:105px;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-            z-index: 20;
-            border-radius: 3px;
-        }
-
-        .week7B {
-            padding: 0px 30px;
-            position: absolute; top: 1000px; left:135px;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-            z-index: 30;
-            border-radius: 3px;
-        }
-
-        .week8B {
-            padding: 0px 30px;
-            position: absolute; top: 1000px; left:360px;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-            z-index: 20;
-            border-radius: 3px;
-        }
-
-        .week9B {
-            padding: 0px 30px;
-            position: absolute; top: 1000px; right:105px;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-            z-index: 20;
-            border-radius: 3px;
-        }
-
-       
-
-        /* triangle decoration */
-
-        #triangle1 {
-            width: 0;
-            height: 0;
-            border-top: 50px solid transparent;
-            border-left: 100px solid chartreuse;
-            border-bottom: 50px solid transparent;
-            position: absolute; top: 80px; left: 60px;
-            transform: rotate(170deg);
-            z-index: 1;
-        }
-
-        #triangle2 {
-            width: 0;
-            height: 0;
-            border-top: 100px solid transparent;
-            border-left: 200px solid chartreuse;
-            border-bottom: 100px solid transparent;
-            position: absolute; bottom: 30px; left: 500px;
-            transform: rotate(250deg);
-            z-index: 1;
-        }
-
-        #triangle3 {
-            width: 0;
-            height: 0;
-            border-top: 25px solid transparent;
-            border-right: 50px solid chartreuse;
-            border-bottom: 25px solid transparent;
-            position: absolute; top: 40px; right: 200px;
-            transform: rotate(10deg);
-        }
-
-        #triangle4 {
-            width: 0;
-            height: 0;
-            border-top: 25px solid transparent;
-            border-right: 50px solid chartreuse;
-            border-bottom: 25px solid transparent;
-            position: absolute; top: 1000px; right: 500px;
-            transform: rotate(10deg);
-            z-index: 10;
-        }
-
-        #triangle5 {
-            width: 0;
-            height: 0;
-            border-top: 100px solid transparent;
-            border-left: 200px solid chartreuse;
-            border-bottom: 100px solid transparent;
-            position: absolute; top: 1350px; left: 400px;
-            transform: rotate(110deg);
-            z-index: 10;
-        }
-
-        #triangle6 {
-            width: 0;
-            height: 0;
-            border-top: 50px solid transparent;
-            border-left: 100px solid chartreuse;
-            border-bottom: 50px solid transparent;
-            position: absolute; top: 1860px; left: 60px;
-            transform: rotate(40deg);
-            z-index: 1;
-        }
-
-        #triangle7 {
-            width: 0;
-            height: 0;
-            border-top: 50px solid transparent;
-            border-left: 100px solid chartreuse;
-            border-bottom: 50px solid transparent;
-            position: absolute; top: 1500px; right: 30px;
-            transform: rotate(83deg);
-            z-index: 1;
-        }
-
-        /* weekly images cover */
-
-        #img1 {
-            position: absolute; top: 300px; left: 200px;
-            z-index: 2;
-        }
-
-        #img2 {
-            position: absolute; top: 320px; left: 650px;
-            z-index: 2;
-            transform: rotate(270deg);
-        }
-
-        #img3 {
-            position: absolute; top: 320px; right: 150px;
-            z-index: 2;
-        }
-
-        #img4 {
-            position: absolute; top: 1000px; left: 200px;
-            z-index: 10;
-        }
-
-        #img5 {
-            position: absolute; top: 1000px; left: 650px;
-            z-index: 10;
-        }
-
-        #img6 {
-            position: absolute; top: 1000px; right: 150px;
-            z-index: 10;
-        }
-
-        #img7 {
-            position: absolute; top: 1700px; left: 200px;
-            z-index: 10;
-        }
-
-        #img8 {
-            position: absolute; top: 1700px; left: 650px;
-            z-index: 10;
-        }
-
-        #img9 {
-            position: absolute; top: 1700px; right: 150px;
-            z-index: 10;
+        #circle2 {
+            width: 400px;
+            height: 400px;
+            background-color: chartreuse;
+            border-radius: 50%;
+            position: absolute; top: 200px; right: 400px;
+            z-index: -1;
         }
 
     </style>
-    
+
 
 </head>
 <body>
-    
-    <!--week heading-->
 
-    <div class="week_heading">
-        <div id="week1H">
-            <h2>WEEK 1</h2>
+    <!--"web design workbook" title-->
+
+    <div class="title">
+        <div id="web">
+            <h1>WEB</h1>
         </div>
-        <div id="week2H">
-            <h2>WEEK 2</h2>
+        <div id="design">
+            <h1>DESIGN</h1>
         </div>
-        <div id="week3H">
-            <h2>WEEK 3</h2>
+        <div id="workbook">
+            <h1>WORKBOOK</h1>
         </div>
-        <div id="week4H">
-            <h2>WEEK 4</h2>
-        </div>
-        <div id="week5H">
-            <h2>WEEK 5</h2>
-        </div>
-        <div id="week6H">
-            <h2>WEEK 6</h2>
-        </div>
-        <div id="week7H">
-            <h2>WEEK 7</h2>
-        </div>
-        <div id="week8H">
-            <h2>WEEK 8</h2>
-        </div>
-        <div id="week9H">
-            <h2>WEEK 9</h2>
+        <div id="subjectname">
+            <h2>GDES30008</h2>
         </div>
     </div>
 
-    <!--direct to week page (button)-->
+    <!--main page images-->
 
-    <div class="week1B">
-        <a href="week1.html">
-            <button class="week1B">READ</button>
-        </a>
-    </div>
-
-    <div class="week2B">
-        <a href="week2.html">
-            <button class="week2B">READ</button>
-        </a>
-    </div>
-
-    <div class="week3B">
-        <a href="week3.html">
-            <button class="week3B">READ</button>
-        </a>
-    </div>
-
-    <div class="week4B">
-        <a href="week4.html">
-            <button class="week4B">READ</button>
-        </a>
-    </div>
-
-    <div class="week5B">
-        <a href="week5.html">
-            <button class="week5B">READ</button>
-        </a>
-    </div>
-
-    <div class="week6B">
-        <a href="week6.html">
-            <button class="week6B">READ</button>
-        </a>
-    </div>
-
-    <div class="week7B">
-        <a href="week7.html">
-            <button class="week7B">READ</button>
-        </a>
-    </div>
-
-    <div class="week8B">
-        <a href="week8.html">
-            <button class="week8B">READ</button>
-        </a>
-    </div>
-
-    <div class="week9B">
-        <a href="week9.html">
-            <button class="week9B">READ</button>
-        </a>
-    </div>
-
-    <!--rectangle text box-->
-
-    <div class="rectangle">
-        <div id="rectangle1"></div>
-        <div id="rectangle2"></div>
-        <div id="rectangle3"></div>
-        <div id="rectangle4"></div>
-        <div id="rectangle5"></div>
-        <div id="rectangle6"></div>
-        <div id="rectangle7"></div>
-        <div id="rectangle8"></div>
-        <div id="rectangle9"></div>
-    </div>
-
-     <!--geometric shapes-->
-
-     <div class="triangle">
-        <div id="triangle1"></div>
-        <div id="triangle2"></div>
-        <div id="triangle3"></div>
-        <div id="triangle4"></div>
-        <div id="triangle5"></div>
-        <div id="triangle6"></div>
-        <div id="triangle7"></div>
-    </div>
-
-
-    <!--background image-->
-
-    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWd5MjljN3N2amw4dGpsNzhjZ3gzYzc5dWM3dnF3bnNjMHlhc28zeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xMzrtZHrqMjxNS/giphy.gif" alt="background" width="2000px" height="2000px">
-
-    <!--week page image-->
-
-    <div class="weekfrontcover">
-        <div id="img1">
-            <img src="https://i.pinimg.com/originals/70/78/39/707839af6ef7678cadc3e18066259996.gif" width="250px" height="250px">
+    <div class="images">
+        <div id="image1">
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzRxNnhnajBuemM1dnQwOWN6enR1NTV1eWEzejdnOWN2aDlrbGp6YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3NwTm7ZQBsDa3753Cg/giphy.gif" width="80" height="80">
         </div>
-        <div id="img2">
-            <img src="https://art.parco.jp/acr/images/w660/xposters01.jpg" width="250px" height="200px">
+        <div id="image2">
+            <img src="https://gifdb.com/images/high/geometric-grid-circle-9hmze9b8diaj9r6d.webp" width="200" height="200">
         </div>
-        <div id="img3">
-            <img src="https://images.squarespace-cdn.com/content/v1/51d98be2e4b05a25fc200cbc/1633401868859-74JKNRRLQIYBVC5BI3QR/Hanmo2.jpeg?format=2500w" width="250px" height="200px">
-        </div>
-        <div id="img4">
-            <img src="https://i.giphy.com/5xtDarwB0zJvVBr93CU.webp" width="250px" height="200px">
-        </div>
-        <div id="img5">
-            <img src="https://ago.ca/sites/default/files/styles/image_large/public/2017-10/E-08897.jpg?h=0b7a0c0c&itok=Au6QQjOu" width="250px" height="200px">
-        </div>
-        <div id="img6">
-            <img src="https://i.gifer.com/Ewly.gif" width="250px" height="200px">
-        </div>
-        <div id="img7">
-            <img src="https://i.ytimg.com/vi/4_ExqM5DVBk/maxresdefault.jpg" width="250px" height="200px">
-        </div>
-        <div id="img8">
-            <img src="https://theculturemap.com/wp-content/uploads/2015/06/chindogu-inventions.jpg" width="250px" height="200px">
-        </div>
-        <div id="img9">
-            <img src="https://lh3.googleusercontent.com/3__TOuHiwWBTSLw2M9wz_DpiuY26UONNMF7oxrgMHl4IPBtgk3BjPAnfjdyl37aq7R0m_VdrVjIZ8dvNLpunwF0NyJskQsvt7qwKVtIX0OwwcZRSLMRgT6Nb7BBbGm9CLmsa66RE" width="250px" height="200px">
+        <div id="image3">
+            <img src="https://i.pinimg.com/originals/9c/3f/5e/9c3f5e7411c638cb6c07253ed32a89f4.gif" width="300" height="300">
         </div>
     </div>
 
+    <!--geometric shapes-->
 
-    
-  
+    <div class="circle">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+    </div>
+
+
+    <!--link to week page-->
+
+    <a href="./workbook/index.html">
+        <button class="button">ENTER PORTAL</button>
+    </a>
+
+
 
 </body>
 </html>
