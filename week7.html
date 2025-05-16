@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>week 7</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="week7.js"></script>
+
+    <style>
+
+        /* heading */
+
+        #week7H {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: absolute; top: 20px; left: 50px;
+        }
+
+
+        #researchH {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: absolute; top: 150px; right: 100px;
+            transform: rotate(15deg);
+          
+        }
+
+        /* paragraph */
+
+        #weekP {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: absolute; top: 80px; left: 50px;
+            z-index: 20;
+        }
+
+        #classP {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: absolute; top: 180px; left: 350px;
+            z-index: 20;
+        }
+
+        #researchP {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: absolute; bottom: 20px; right: 30px;
+            z-index: 20;
+        }
+       
+
+        .button {
+            padding: 0px 30px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            position: absolute; top: 50px; right: 100px;
+        }
+
+        /* textbox rectangle */
+
+        #textB1 {
+            width: 650px;
+            height: 120px;
+            background-color: beige;
+            position: absolute; top: 180px; left: 330px;
+        }
+
+        #textB2 {
+            width: 950px;
+            height: 100px;
+            background-color: beige;
+            position: absolute; bottom: 20px; right: 15px;
+        }
+
+        /* workshop image  */
+
+        #blinker {
+            position: absolute; top: 180px; left: 100px;
+        }
+
+        #fan {
+            position: absolute; top: 480px; left: 250px;
+        }
+
+        /* research image */
+
+        #pacMan1 {
+            position: absolute; top: 220px; right: 200px;
+        }
+
+        #pacMan2 {
+            position: absolute; top: 420px; right: 80px;
+        }
+
+        #website1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: absolute; top: 300px; right: 90px;
+        }
+    
+    </style>
+
+
+
+
+  </head>
+
+  <body>
+
+    <!-- titles -->
+
+    <div class="title">
+        <div id="week7H">
+            <h1>WEEK 7 ACTIVITIES</h1>
+        </div>
+        <div id="researchH">
+            <h1>RESEARCH</h1>
+        </div>
+    </div>
+
+    <!-- p5js bg -->
+
+    <script src="week7.js"></script>
+
+    <!--paragraphs-->
+
+    <div class="paragraphs">
+        <div id="weekP">
+            <p>In Week 7, we explore physical computing through Arduino IDE & Board set up. In workshops at the Telstra Creator Space, we built circuits that relates to physical coding where it can light up blinkers and run a system through coding input from computer to arduino.</p>
+        </div>
+        <div id="classP">
+            <p>In class, we follow through instructions to build the circuit where we <br> managed to light up the blinkers, first through the use of buzzers and then <br> connecting to the wiring. The fan activity was also successful where it is <br> powered through battery shown on the bottom.  </p>
+        </div>
+        <div id="researchP">
+            <p>This is a experimentation where a family loves halloween and one of their daughters wanted to be pac man where <br> he embraces physical computing to create a realistic ghost feature that has motion. In this article, <br>it demonstrates his process on using arduino to code along with blinkers for the LED light effect that shows <br> how physical computing take part in real life.</p>
+        </div>
+    </div>
+
+    <!--text box-->
+
+    <div class="textB">
+        <div id="textB1"></div>
+        <div id="textB2"></div>
+    </div>
+
+   
+
+    <!--workshop images-->
+
+    <div class="workshopImg">
+        <div id="blinker">
+            <img src="blink_experiment.jpg" width="200px" height="270px">
+        </div>
+        <div id="fan">
+            <img src="fan_experiment.jpg" width="200px" height="270px">
+        </div>
+    </div>
+
+    <!--research image-->
+
+    <div class="researchImg">
+        <div id="pacMan1">
+            <img src="https://content.instructables.com/FEB/TF14/J9JFW1QK/FEBTF14J9JFW1QK.jpg?auto=webp&frame=1&width=1024&height=1024&fit=bounds&md=MjAxNy0xMS0wNiAwNzozNDoyNy4w" width="200px" height="200px" style="border-radius: 50%;">
+        </div>
+        <div id="pacMan2">
+            <img src="https://content.instructables.com/FKH/1COO/J9JFW1U7/FKH1COOJ9JFW1U7.jpg?auto=webp&frame=1&width=600&height=1024&fit=bounds&md=MjAxNy0xMS0wNiAwNzozNjozMS4w" width="200px" height="200px" style="border-radius: 50%;">
+        </div>
+    </div>
+    
+    <!--research link-->
+
+    <div class="link">
+        <div id="website1">
+            <a href="https://www.instructables.com/Pacman-LED-Pixel-Panel-Costume/" target="_blank">PAC MAN</a>
+        </div>
+    </div>
+    
+        
+
+
+   <!-- direct to home page -->
+
+    <a href="index.html">
+        <button class="button">HOME PAGE</button>
+    </a>
+
+    
+
+  </body>
+</html>
